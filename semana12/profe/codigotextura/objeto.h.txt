@@ -1,0 +1,24 @@
+#ifndef _OBJETO_H
+#define _OBJETO_H
+
+struct Point3f
+	{
+	float x, y, z;
+	float u, v;
+	};
+
+struct Face
+	{
+	int vertexIndices[3];
+	int smoothingGroup;
+	Point3f faceNormal;
+	};
+
+struct Object3D
+	{
+	int nVertices;
+	Point3f *pVertices;			
+	int nFaces;
+	Face *pFaces;						
+	};
+#endif

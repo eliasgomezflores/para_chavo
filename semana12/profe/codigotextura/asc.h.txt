@@ -1,0 +1,9 @@
+#ifndef _ASC_H
+#define _ASC_H
+
+#include <string.h>
+#include "objeto.h"
+
+void CargarObjeto(char *archivo_asc, Object3D &object);
+
+#endif
